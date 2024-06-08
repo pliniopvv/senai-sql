@@ -16,10 +16,9 @@ CREATE TABLE IF NOT EXISTS Paciente (
 );
 
 CREATE TABLE IF NOT EXISTS Consulta (
+    idConsulta INTEGER PRIMARY KEY,
     idNutricionista INTEGER,
-    idConsulta INTEGER NOT NULL,
     idPaciente INTEGER NOT NULL,
-    dataConsulta TIMESTAMP NOT NULL,
+    dataConsulta DATE NOT NULL,
     observacao VARCHAR(256)
 );
-
