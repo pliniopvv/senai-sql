@@ -1,0 +1,9 @@
+ALTER TABLE Consulta
+    ADD CONSTRAINT FK_CONSULTA_PACIENTE
+    FOREIGN KEY (idPaciente)
+    REFERENCES Paciente(id);
+
+ALTER TABLE Consulta
+    ADD CONSTRAINT FK_CONSULTA_NUTRICIONISTA
+    FOREIGN KEY (idNutricionista)
+    REFERENCES Nutricionista(id);
