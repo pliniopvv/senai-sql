@@ -6,6 +6,6 @@ INSERT INTO Paciente (nome, dataNascimento, cpf, telefone, email) VALUES ('João
 INSERT INTO Paciente (nome, dataNascimento, cpf, telefone, email) VALUES ('Joice Batista', '1985-10-18', '4433412135', '69944448888');
 INSERT INTO Paciente (nome, dataNascimento, cpf, telefone, email) VALUES ('Juvenancia Durvalina', '1938-08-25', '22233355545', '69877775555');
 
-INSERT INTO Consulta (idNutricionista, idPaciente, dataConsulta, observacao) VALUES (1, 1, today, 'Sem observações relevantes.');
-INSERT INTO Consulta (idNutricionista, idPaciente, dataConsulta, observacao) VALUES (2, 2, today, 'Com observações relevantes.');
-INSERT INTO Consulta (idNutricionista, idPaciente, dataConsulta, observacao) VALUES (3, 3, today, 'Com observações mais ou menos relevantes.');
+INSERT INTO Consulta (idNutricionista, idPaciente, dataConsulta, observacao) VALUES (1, 1, CURRENT_DATE, 'Sem observações relevantes.');
+INSERT INTO Consulta (idNutricionista, idPaciente, dataConsulta, observacao) VALUES (2, 2, CURRENT_DATE, 'Com observações relevantes.');
+INSERT INTO Consulta (idNutricionista, idPaciente, dataConsulta, observacao) VALUES (3, 3, CURRENT_DATE, 'Com observações mais ou menos relevantes.');
